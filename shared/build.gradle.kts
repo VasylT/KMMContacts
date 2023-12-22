@@ -84,7 +84,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.plcoding.contactscomposemultiplatform"
+    namespace = "com.vasylt.composekmm"
     compileSdk = 33
     defaultConfig {
         minSdk = 24
@@ -97,7 +97,7 @@ android {
 
 sqldelight {
     database("ContactDatabase") {
-        packageName = "com.plcoding.contactscomposemultiplatform.database"
+        packageName = "com.vasylt.composekmm.database"
         sourceFolders = listOf("sqldelight")
     }
 }

@@ -5,10 +5,10 @@ plugins {
 }
 
 android {
-    namespace = "com.plcoding.contactscomposemultiplatform.android"
+    namespace = "com.vasylt.composekmm.android"
     compileSdk = 34
     defaultConfig {
-        applicationId = "com.plcoding.contactscomposemultiplatform.android"
+        applicationId = "com.vasylt.composekmm.android"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
