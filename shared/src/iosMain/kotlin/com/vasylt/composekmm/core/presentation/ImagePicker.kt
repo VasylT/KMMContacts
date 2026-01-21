@@ -1,6 +1,9 @@
+@file:OptIn(ExperimentalForeignApi::class)
+
 package com.vasylt.composekmm.core.presentation
 
 import androidx.compose.runtime.Composable
+import kotlinx.cinterop.ExperimentalForeignApi
 import kotlinx.cinterop.refTo
 import platform.UIKit.UIImage
 import platform.UIKit.UIImageJPEGRepresentation

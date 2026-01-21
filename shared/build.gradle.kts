@@ -37,7 +37,7 @@ kotlin {
     }
 
     sourceSets {
-        val commonMain by getting {
+        commonMain {
             dependencies {
                 implementation(compose.runtime)
                 implementation(compose.foundation)
@@ -51,25 +51,23 @@ kotlin {
                 implementation(libs.kotlinx.datetime)
             }
         }
-        val androidMain by getting {
+        androidMain {
             dependencies {
                 implementation(libs.android.driver)
                 implementation(libs.appcompat)
                 implementation(libs.activity.compose)
             }
         }
-        val iosMain by creating {
+        iosMain {
             dependencies {
                 implementation(libs.native.driver)
             }
-            dependsOn(commonMain)
         }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
             }
         }
-        val androidUnitTest by getting
     }
 }
 

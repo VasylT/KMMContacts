@@ -1,6 +1,6 @@
 package com.vasylt.composekmm
 
-import androidx.compose.ui.interop.LocalUIViewController
+import androidx.compose.ui.uikit.LocalUIViewController
 import androidx.compose.ui.window.ComposeUIViewController
 import com.vasylt.composekmm.core.presentation.ImagePickerFactory
 import com.vasylt.composekmm.di.AppModule
