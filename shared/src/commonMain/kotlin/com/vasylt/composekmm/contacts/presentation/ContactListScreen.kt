@@ -33,9 +33,9 @@ fun ContactListScreen(
     state: ContactListState,
     newContact: Contact?,
     onEvent: (ContactListEvent) -> Unit,
-    imagePicker: ImagePicker
+    imagePicker: ImagePicker? = null
 ) {
-    imagePicker.registerPicker { imageBytes ->
+    imagePicker?.registerPicker { imageBytes ->
         onEvent(ContactListEvent.OnPhotoPicked(imageBytes))
     }
     Scaffold(
@@ -102,7 +102,7 @@ fun ContactListScreen(
         isOpen = state.isAddContactSheetOpen,
         onEvent = { event ->
             if(event is ContactListEvent.OnAddPhotoClicked) {
-                imagePicker.pickImage()
+                imagePicker?.pickImage()
             }
             onEvent(event)
         },

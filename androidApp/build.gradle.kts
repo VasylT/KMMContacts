@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.vasylt.composekmm.android"
-    compileSdk = 34
+    compileSdk = 35
     defaultConfig {
         applicationId = "com.vasylt.composekmm.android"
         minSdk = 24
